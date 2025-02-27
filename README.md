@@ -1,8 +1,10 @@
-# Chicken Water Controller (April, 2023)
+# 🐔 Chicken Water Controller (April, 2023)
 
 A MicroPython program that runs on the ESP32 microcontroller.
 
-## Description
+Design by Eric Hansen @cablesquirrel
+
+## 📝 Description
 
 Having backyard chickens can be a rewarding hobby. Not having to purchase eggs at a grocery
 store, along with having a cleanup crew to help remove pests and weeds from your yard and
@@ -16,7 +18,7 @@ For this project, I decided to automate the task of draining stale and often con
 water and refilling it on a daily basis. The solution I came up with was having an ESP32 microcontroller
 handle opening drain and fill valves attached to a plastic tub.
 
-## Hardware
+## 🔌 Hardware
 
 Here are the major components that I needed for the project. Small wire, screws, solder, etc. are needed,
 but are not mentioned on this list.
@@ -46,11 +48,11 @@ but are not mentioned on this list.
 	- Wood Glue
 	- Plumbing Strap
 
-## Software
+## 💿 Software
 
 This project uses MicroPython running on the ESP32
 
-### Software Features
+### ✨ Software Features
 
 - Watchdog timer to reset ESP32 if main program stops
 - Syslog to remote server for logging
@@ -58,7 +60,7 @@ This project uses MicroPython running on the ESP32
 - MicroCRON for scheduling operation of the drain and fill procedure
 - Hardware interrups from the button pushes to stop in-progress operations
 
-## Theory of operation
+## 📚 Theory of operation
 
 Upon device power-up, it will attempt to connect to the configured WiFi SSID after waiting 1 full second
 for the devices radio to interface to come up. If unable to connecto to WiFi within 30 seconds, the device
@@ -100,7 +102,7 @@ brings the water level to the desired depth with room for slight variation due t
 is closed and the state is changed to COMPLETE. The system logs that the procedure has successfully completed and the
 state is set to IDLE.
 
-## Build Pictures
+## 🔨 Build Pictures
 
 Tub in wooden frame
 
