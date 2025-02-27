@@ -1,4 +1,4 @@
-# 🐔 Chicken Water Controller (April, 2023)
+# 🐔 Chicken Water Controller (April 2023)
 
 A MicroPython program that runs on the ESP32 microcontroller.
 
@@ -37,7 +37,7 @@ but are not mentioned on this list.
 	- Electric Solenoid Valve (1/2" | 12 Volt) for fill
 	- Water Hammer Arrestor (1/2") - Helps with hammering when solenoid closes
 - Purchased at Lowe's
-	- 9-Gallon HDPE Fish Pond Liner (moulded)
+	- 9-Gallon HDPE Fish Pond Liner (molded)
 	- Pressure Treated Lumber
 	- Exterior Paint
 	- PVC drain pipe
@@ -58,12 +58,12 @@ This project uses MicroPython running on the ESP32
 - Syslog to remote server for logging
 - NTP to ensure accurate time in the absence of a RTC
 - MicroCRON for scheduling operation of the drain and fill procedure
-- Hardware interrups from the button pushes to stop in-progress operations
+- Hardware interrupts from the button pushes to stop in-progress operations
 
 ## 📚 Theory of operation
 
 Upon device power-up, it will attempt to connect to the configured WiFi SSID after waiting 1 full second
-for the devices radio to interface to come up. If unable to connecto to WiFi within 30 seconds, the device
+for the devices radio to interface to come up. If unable to connect to WiFi within 30 seconds, the device
 will reset and start the process over.
 
 The device now checks to make sure required Python packages are installed and installs them using uPIP if
