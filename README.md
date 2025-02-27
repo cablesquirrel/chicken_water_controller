@@ -31,7 +31,7 @@ but are not mentioned on this list.
 	- Multiple Voltage Power Supply 5V/12V/24V
 	- 30mm case fan for enclosure (5V or 12V)
 	- Momentary Push Button Switches
-	- Waterproof enclusure (11" x 7.5" x 5.5")
+	- Waterproof enclosure (11" x 7.5" x 5.5")
 	- Power cord (with ground)
 	- 18Ga 3-conductor wire (enough to go from the relay board to each valve/solenoid)
 	- Motorized Ball Valve (3/4" | 9-24 Volt) for drain
@@ -64,7 +64,7 @@ This project uses MicroPython running on the ESP32
 ## 📚 Theory of operation
 
 Upon device power-up, it will attempt to connect to the configured WiFi SSID after waiting 1 full second
-for the devices radio to interface to come up. If unable to connect to WiFi within 30 seconds, the device
+for the device's radio to interface to come up. If unable to connect to WiFi within 30 seconds, the device
 will reset and start the process over.
 
 The device now checks to make sure required Python packages are installed and installs them using uPIP if
@@ -82,14 +82,14 @@ Syslog is initialized and startup messages are sent to the remote syslog server.
 Controller class enters its program loop. Watchdog timer is enabled and must be fed every 10 minutes. Failure to
 feed the watchdog will result in the ESP32 resetting.
 
-The Controller class maintains a current state which can be 6 possible states (IDLE, DRAINING, FLUSHING, FILLING,
-COMPLETE, STOP).
+The Controller class maintains a current state which can be one of 6 possible states (IDLE, DRAINING, FLUSHING,
+FILLING, COMPLETE, STOP).
 
-- State: IDLE - Loop is running and watchdog timer is being fed. No values are open.
-- State: DRAINING - Drain valve is open and timer is counting down for the length of the drain time.
+- State: IDLE - Loop is running and watchdog timer is being fed. No valves are open.
+- State: DRAINING - Drain valve is open and tub is draining.
 - State: FLUSHING - Fill and drain valves are both open. Fresh water is being used to flush any debris that might
-still be in the tub after drain operation. Runs until flush timer is up.
-- State: FILLING - Fill valve is open. Tub is filling. Runs until fill timer is up.
+still be in the tub after drain operation.
+- State: FILLING - Fill valve is open. Tub is filling.
 - State: COMPLETE - All valves are closed. Sends log entry to syslog for successful operation.
 - State: STOP - Triggered by hardware interrupt. All valves commanded to close and current procedure ends.
 
