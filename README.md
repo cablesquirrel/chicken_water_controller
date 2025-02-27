@@ -118,6 +118,9 @@ Control box mounted in chicken coop
 
 ![Control box mounted in chicken coop](Images/control_box_2.jpg)
 
+Drain pipe
+![Drain pipe](Images/drain_pipe.jpg)
+
 Drain valve
 
 ![Drain valve](Images/drain_valve.jpg)
