@@ -103,22 +103,29 @@ state is set to IDLE.
 ## Build Pictures
 
 Tub in wooden frame
-![Tub in wooden frame](Images/tub_in_frame)
+
+![Tub in wooden frame](Images/tub_in_frame.jpg)
 
 Assembled frame
-![Assembled frame](Images/assembled_frame)
+
+![Assembled frame](Images/assembled_frame.jpg)
 
 Inside of control box
+
 ![Inside of control box](Images/control_box.jpg)
 
 Control box mounted in chicken coop
+
 ![Control box mounted in chicken coop](Images/control_box_2.jpg)
 
 Drain valve
+
 ![Drain valve](Images/drain_valve.jpg)
 
 Fill valve
+
 ![Fill valve](Images/fill_valve.jpg)
 
 Completed system
+
 ![Completed system](Images/completed.jpg)
