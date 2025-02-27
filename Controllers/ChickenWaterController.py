@@ -29,7 +29,7 @@ class ChickenWaterChanger():
 
     def __init__(self):
         # Set up logger
-        self._logger = MultiLogger(log_level=MultiLogger.LEVEL_DEBUG, syslog_server="172.16.102.6", app_name="Chicken_Water_changer")
+        self._logger = MultiLogger(log_level=MultiLogger.LEVEL_DEBUG, syslog_server="YOUR_SYSLOG_IP", app_name="Chicken_Water_changer")
         self._logger.log(MultiLogger.LEVEL_INFO, "ChickenWaterController.py: Controller initialization started")
         # Set up Watchdog Timer
         self._watchdog_timer = WDT(id=0, timeout=1000 * 60 * 10)
