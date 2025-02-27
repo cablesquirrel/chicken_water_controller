@@ -29,6 +29,7 @@ but are not mentioned on this list.
 	- External WiFi antenna with MHF4 to SMA adapter
 	- Relay Board (capable of being driven by 3.3V signal outputs)
 	- Multiple Voltage Power Supply 5V/12V/24V
+	- 30mm case fan for enclosure (5V or 12V)
 	- Momentary Push Button Switches
 	- Waterproof enclusure (11" x 7.5" x 5.5")
 	- Power cord (with ground)
