@@ -82,8 +82,8 @@ feed the watchdog will result in the ESP32 resetting.
 The Controller class maintains a current state which can be 6 possible states (IDLE, DRAINING, FLUSHING, FILLING,
 COMPLETE, STOP).
 
-- State: IDLE - Loop is running and watchdog timer is being fed. No values are open
-- State: DRAINING - Drain valve is open and timer is counting down for the length of the drain time
+- State: IDLE - Loop is running and watchdog timer is being fed. No values are open.
+- State: DRAINING - Drain valve is open and timer is counting down for the length of the drain time.
 - State: FLUSHING - Fill and drain valves are both open. Fresh water is being used to flush any debris that might
 still be in the tub after drain operation. Runs until flush timer is up.
 - State: FILLING - Fill valve is open. Tub is filling. Runs until fill timer is up.
@@ -99,3 +99,26 @@ has elapsed state is changed to FILLING. The fill valve is opened and the tub is
 brings the water level to the desired depth with room for slight variation due to water pressure. The fill valve
 is closed and the state is changed to COMPLETE. The system logs that the procedure has successfully completed and the
 state is set to IDLE.
+
+## Build Pictures
+
+Tub in wooden frame
+![Tub in wooden frame](Images/tub_in_frame)
+
+Assembled frame
+![Assembled frame](Images/assembled_frame)
+
+Inside of control box
+![Inside of control box](Images/control_box.jpg)
+
+Control box mounted in chicken coop
+![Control box mounted in chicken coop](Images/control_box_2.jpg)
+
+Drain valve
+![Drain valve](Images/drain_valve.jpg)
+
+Fill valve
+![Fill valve](Images/fill_valve.jpg)
+
+Completed system
+![Completed system](Images/completed.jpg)
